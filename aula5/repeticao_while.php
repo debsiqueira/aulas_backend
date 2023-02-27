@@ -12,13 +12,12 @@
 <h2>Estrutura de repetição</h2>
 <p> 
     Utilizada para repetir uma sequencia 
-    de instrução um número predeterminado 
-    de vezes.
+    de instrução enquanto uma condição for verdadeira.
 </p>
 
 <p>
     <pre>
-        for(inicio; condição; passo){
+        while(){
             //instruções a serem repetidas
         }
     </pre>
@@ -27,14 +26,17 @@
 
 <div class="container">
     <?php
-
-         for($tabuada = 1; $tabuada <=10; $tabuada++){
+         $tabuada = 1;
+        while($tabuada <=10){
             echo "<div>";
-            for($contador = 0; $contador <=10; $contador++){
-            $resultado = $tabuada * $contador;
-             echo "$tabuada x $contador =  $resultado <br>";
+                $contador = 0;
+                while($contador <=10){
+                    $resultado = $tabuada * $contador;
+                    echo "$tabuada x $contador =  $resultado <br>";
+                    $contador++;
         }
         echo "</div>";
+        $tabuada++;
     }
 
     ?>
