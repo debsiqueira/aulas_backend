@@ -12,7 +12,7 @@
     <h1>Cadastro de produto</h1>
     <hr>
 
-        <form action="<?php echo isset($produto) ? 'atualizar.php' : 'inserir.php' ?>" method="post">
+        <form action="<?php echo isset($produto) ? 'atualizar.php' : 'inserir.php' ?>" method="post" enctype="multipart/form-data">
         <label for="nome">Nome</label><br>
         <input type="text" name="nome" id="nome" value="<?php echo $produto['nome'] ?? ""; ?>"><br>  
         <input type="hidden" name="id" id="id" value="<?php echo $produto['idproduto'] ?? ""; ?>"><br> 
