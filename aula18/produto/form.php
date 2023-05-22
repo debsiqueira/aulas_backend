@@ -26,7 +26,7 @@
         <label for="foto">Foto</label><br>
         <input type="file" name="foto" id="foto"><br> 
         <br>
-
+        
         <button type="submit"> Cadastrar </button>
         </form>
 
