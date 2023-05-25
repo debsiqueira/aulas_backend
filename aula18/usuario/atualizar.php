@@ -29,4 +29,4 @@ $comando->execute();
 
 }
 //abre o arquivo usuarios.php
-header("Location: usuarios.php");
+header("Location: index.php");
