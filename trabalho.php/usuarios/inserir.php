@@ -15,8 +15,8 @@ if(isset($_POST["nome"]) )
 
 
 //String com o comando SQL para ser executado no DB
-$sql = "INSERT INTO `usuarios` (`nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?)";
-echo $sql;
+$sql = "INSERT INTO usuarios (`nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?)";
+
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);

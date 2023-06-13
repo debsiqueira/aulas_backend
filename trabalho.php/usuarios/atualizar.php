@@ -14,9 +14,7 @@ $email = $_POST["email"];
 $endereco =  $_POST["endereco"];
 
 //String com o comando SQL para ser executado no DB
-$sql = "UPDATE usuarios SET 
-`nome`= ?, `idade`= ?, `email`= ?, `endereco`= ? 
-WHERE  `id`= ? ";
+$sql = "UPDATE usuarios SET `nome`= ?, `idade`= ?, `email`= ?, `endereco`= ? WHERE  `id`= ? ";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);
