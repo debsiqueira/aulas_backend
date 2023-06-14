@@ -32,6 +32,8 @@
        <button type="submit" class="btn btn-dark">Cadastrar</button>
 
     </form>
+    
 </div>
+
 
     <?php require_once "../template/rodape.php";  ?>

@@ -18,13 +18,14 @@
       <th scope="col">Idade</th>
       <th scope="col">Email</th>
       <th scope="col">Endereço</th>
+      <th>Ações</th>
     </tr>
 </thead>
 <tbody>
 
 <?php foreach($usuarios as $usuario){ ?>
     <tr>
-      <th scope="row"><?php echo $usuario ['nome']; ?></th>
+      <td scope="row"><?php echo $usuario ['nome']; ?></td>
 
       <td><?php echo $usuario['idade']; ?> </td>
 

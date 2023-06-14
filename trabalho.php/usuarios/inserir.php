@@ -7,7 +7,7 @@ if(isset($_POST["nome"]) )
 {
 
 
- $id = $_POST['id'];
+ 
  $nome =  $_POST["nome"];
  $idade = $_POST["idade"];
  $email = $_POST["email"];
@@ -15,14 +15,14 @@ if(isset($_POST["nome"]) )
 
 
 //String com o comando SQL para ser executado no DB
-$sql = "INSERT INTO usuarios (`nome`, `idade`, `email`, `endereco`) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO usuarios (`nome`, `idade`, `email`, `endereço`) VALUES (?, ?, ?, ?);";
 
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);
 
 //adiciona os valores nos parâmetros
-$comando->bind_param("sissi", $nome, $idade, $email, $endereco, $id);
+$comando->bind_param("siss", $nome, $idade, $email, $endereco);
 
 //executa o SQL - Comando no Banco de Dados
 $comando->execute();

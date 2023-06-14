@@ -5,16 +5,14 @@ require_once "../conexao.php";
 
 if(isset($_POST["nome"]))
 {
-
-
-$id = $_POST['id'];
+$id =  $_POST["id"];
 $nome =  $_POST["nome"];
 $idade = $_POST["idade"];
 $email = $_POST["email"];
 $endereco =  $_POST["endereco"];
 
 //String com o comando SQL para ser executado no DB
-$sql = "UPDATE usuarios SET `nome`= ?, `idade`= ?, `email`= ?, `endereco`= ? WHERE  `id`= ? ";
+$sql = "UPDATE `usuarios` SET `nome`=?, `idade`=?, `email`=?, `endereço`=? WHERE  `id`=?;";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);
